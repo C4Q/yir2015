@@ -4,9 +4,7 @@ $max-break-point: 1280px;
   margin: 0 auto;
   outline: 1px solid green;
   max-width: $max-break-point;
-  @media (min-width: $max-break-point) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 .App__container {
