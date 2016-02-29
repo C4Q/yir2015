@@ -14,7 +14,8 @@ body {
 }
 
 @import "./App";
-
+$move-left-delay: .8s;
+$move-right-delay: 0s;
 .SectionHome__container,
 .SectionOverview__container,
 .SectionStats__container,
@@ -22,6 +23,27 @@ body {
 .SectionPartners__container {
   @include display(flex);
   width: 100%;
+  transform: translate3d(0, 0, 0);
+  &.left {
+    transform: translate3d(-40%, 0, 0);
+    transition: transform 0.8s $cubic-bezier-fast-in $move-left-delay;
+  }
+}
+
+.SectionHome__container {
+  transition: transform 0.8s $cubic-bezier-fast-in $move-right-delay;
+}
+.SectionOverview__container {
+  transition: transform 0.8s $cubic-bezier-fast-in $move-right-delay;
+}
+.SectionStats__container {
+  transition: transform 0.8s $cubic-bezier-fast-in $move-right-delay;
+}
+.SectionApps__container {
+  transition: transform 0.8s $cubic-bezier-fast-in $move-right-delay;
+}
+.SectionPartners__container {
+  transition: transform 0.8s $cubic-bezier-fast-in $move-right-delay;
 }
 
 .SectionHome__main,
