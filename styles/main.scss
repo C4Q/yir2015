@@ -1,0 +1,44 @@
+@import "./colors";
+@import "./constants";
+@import "./mixins/section";
+@import "./mixins/prefixer";
+@import "./mixins/flex";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+@import "./App";
+
+.SectionHome__container,
+.SectionOverview__container,
+.SectionStats__container,
+.SectionApps__container,
+.SectionPartners__container {
+  @include display(flex);
+  width: 100%;
+}
+
+.SectionHome__main,
+.SectionOverview__main,
+.SectionStats__main,
+.SectionApps__main,
+.SectionPartners__main, {
+  @include flex(1 1 auto);
+  width: 100%;
+  padding: 20px;
+}
+
+.SectionHome__aside,
+.SectionOverview__aside,
+.SectionStats__aside,
+.SectionApps__aside,
+.SectionPartners__aside {
+  @include flex(1 1 auto);
+  width: 60%;
+}

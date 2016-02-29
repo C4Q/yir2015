@@ -1,0 +1,9 @@
+@mixin section {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background: lightgrey;
+  height: 600px;
+  outline: 1px solid red;
+}

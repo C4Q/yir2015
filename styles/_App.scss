@@ -1,0 +1,19 @@
+$max-break-point: 1280px;
+.App {
+  position: relative;
+  margin: 0 auto;
+  outline: 1px solid green;
+  max-width: $max-break-point;
+  @media (min-width: $max-break-point) {
+    overflow: hidden;
+  }
+}
+
+.App__container {
+  transition: transform 0.5s $cubic-bezier-fast-in;
+  transform: translate3d(0, 0, 0);
+  width: 160%;
+  &.left {
+    transform: translate3d(-40%, 0, 0);
+  }
+}
