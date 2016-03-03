@@ -1,4 +1,6 @@
-import s from '../styles/main.scss'
+import s from '../styles/main.scss';
+import contour from './contour.js';
+
 const qs = document.querySelector.bind(document)
 const appContainerSelector = '.App__container'
 const thingsToMoveLeft = [
@@ -27,3 +29,5 @@ function moveRight(e) {
     i.classList.remove('left')
   })
 }
+
+contour();
