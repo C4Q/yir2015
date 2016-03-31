@@ -1,0 +1,62 @@
+body {
+    background-color: #000;
+    color: #FFF;
+}
+
+
+.yir-cover {
+    background-image: url("../images/_proto/topo3d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 90vh;
+    margin: 0px 40px;
+}
+
+.yir-cover .content {
+    position: absolute;
+    width: 300px;
+    max-width: 25vw;
+    right: 10%;
+    top: 10%;
+}
+
+.yir-controls {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.yir-controls .logo {
+    position: inherit;
+    background: url("../images/_proto/c4qlogo.png") no-repeat center;
+    bottom: 8%;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.yir-controls .social {
+    position: inherit;
+    bottom: 0px;
+    right: 0px;
+}
+
+.yir-controls .social .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.yir-controls .social .facebook {
+    background: url("../images/_proto/social-fb.png") no-repeat center;
+}
+
+.yir-controls .social .instagram {
+    background: url("../images/_proto/social-instagram.png") no-repeat center;
+}
+
+.yir-controls .social .twitter {
+    background: url("../images/_proto/social-twitter.png") no-repeat center;
+}
